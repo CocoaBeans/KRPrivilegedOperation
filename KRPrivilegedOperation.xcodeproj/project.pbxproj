@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A29A50F133C854600168704 /* NSFileHandle+PrivilegedOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF73A6133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.m */; };
+		0AAF736E133AA17F00487FEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF736D133AA17F00487FEE /* Cocoa.framework */; };
+		0AAF7378133AA17F00487FEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF7376133AA17F00487FEE /* InfoPlist.strings */; };
+		0AAF7380133AA17F00487FEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF736D133AA17F00487FEE /* Cocoa.framework */; };
+		0AAF7383133AA17F00487FEE /* KRPrivilegedOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF736A133AA17F00487FEE /* KRPrivilegedOperation.framework */; };
+		0AAF7389133AA17F00487FEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF7387133AA17F00487FEE /* InfoPlist.strings */; };
+		0AAF738C133AA17F00487FEE /* KRPrivilegedOperationTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF738B133AA17F00487FEE /* KRPrivilegedOperationTests.h */; };
+		0AAF738E133AA17F00487FEE /* KRPrivilegedOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF738D133AA17F00487FEE /* KRPrivilegedOperationTests.m */; };
+		0AAF739B133AA1C900487FEE /* recvfdpriv.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAF7397133AA1C900487FEE /* recvfdpriv.h */; };
+		0AAF739C133AA1C900487FEE /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7398133AA1C900487FEE /* error.c */; };
+		0AAF739E133AA1C900487FEE /* recvfdpriv.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF739A133AA1C900487FEE /* recvfdpriv.c */; };
+		0AAF73A7133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAF73A5133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AAF73A8133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF73A6133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.m */; };
+		0AAF73BA133D1EB400487FEE /* NSFileManager+PrivilegedOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAF73B8133D1EB400487FEE /* NSFileManager+PrivilegedOperations.h */; };
+		0AAF73BB133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF73B9133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m */; };
+		0AAF73BC133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF73B9133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AAF7381133AA17F00487FEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AAF7360133AA17F00487FEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AAF7369133AA17F00487FEE;
+			remoteInfo = MMPrivilegedOperation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AAF736A133AA17F00487FEE /* KRPrivilegedOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KRPrivilegedOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAF736D133AA17F00487FEE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0AAF7370133AA17F00487FEE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0AAF7371133AA17F00487FEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0AAF7372133AA17F00487FEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AAF7375133AA17F00487FEE /* KRPrivilegedOperation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KRPrivilegedOperation-Info.plist"; sourceTree = "<group>"; };
+		0AAF7377133AA17F00487FEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AAF7379133AA17F00487FEE /* KRPrivilegedOperation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRPrivilegedOperation-Prefix.pch"; sourceTree = "<group>"; };
+		0AAF737F133AA17F00487FEE /* KRPrivilegedOperationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRPrivilegedOperationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAF7386133AA17F00487FEE /* KRPrivilegedOperationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KRPrivilegedOperationTests-Info.plist"; sourceTree = "<group>"; };
+		0AAF7388133AA17F00487FEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AAF738A133AA17F00487FEE /* KRPrivilegedOperationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRPrivilegedOperationTests-Prefix.pch"; sourceTree = "<group>"; };
+		0AAF738B133AA17F00487FEE /* KRPrivilegedOperationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRPrivilegedOperationTests.h; sourceTree = "<group>"; };
+		0AAF738D133AA17F00487FEE /* KRPrivilegedOperationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRPrivilegedOperationTests.m; sourceTree = "<group>"; };
+		0AAF7397133AA1C900487FEE /* recvfdpriv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recvfdpriv.h; sourceTree = "<group>"; };
+		0AAF7398133AA1C900487FEE /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		0AAF739A133AA1C900487FEE /* recvfdpriv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recvfdpriv.c; sourceTree = "<group>"; };
+		0AAF73A5133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileHandle+PrivilegedOperations.h"; sourceTree = "<group>"; };
+		0AAF73A6133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileHandle+PrivilegedOperations.m"; sourceTree = "<group>"; };
+		0AAF73B8133D1EB400487FEE /* NSFileManager+PrivilegedOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PrivilegedOperations.h"; sourceTree = "<group>"; };
+		0AAF73B9133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PrivilegedOperations.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AAF7366133AA17F00487FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF736E133AA17F00487FEE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAF737B133AA17F00487FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF7380133AA17F00487FEE /* Cocoa.framework in Frameworks */,
+				0AAF7383133AA17F00487FEE /* KRPrivilegedOperation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AAF735E133AA17F00487FEE = {
+			isa = PBXGroup;
+			children = (
+				0AAF7373133AA17F00487FEE /* KRPrivilegedOperation */,
+				0AAF7384133AA17F00487FEE /* KRPrivilegedOperationTests */,
+				0AAF736C133AA17F00487FEE /* Frameworks */,
+				0AAF736B133AA17F00487FEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AAF736B133AA17F00487FEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF736A133AA17F00487FEE /* KRPrivilegedOperation.framework */,
+				0AAF737F133AA17F00487FEE /* KRPrivilegedOperationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AAF736C133AA17F00487FEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF736D133AA17F00487FEE /* Cocoa.framework */,
+				0AAF736F133AA17F00487FEE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AAF736F133AA17F00487FEE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7370133AA17F00487FEE /* AppKit.framework */,
+				0AAF7371133AA17F00487FEE /* CoreData.framework */,
+				0AAF7372133AA17F00487FEE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0AAF7373133AA17F00487FEE /* KRPrivilegedOperation */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF73A4133AA38900487FEE /* Classes */,
+				0AAF739F133AA1F600487FEE /* C */,
+				0AAF7374133AA17F00487FEE /* Supporting Files */,
+			);
+			path = KRPrivilegedOperation;
+			sourceTree = "<group>";
+		};
+		0AAF7374133AA17F00487FEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7375133AA17F00487FEE /* KRPrivilegedOperation-Info.plist */,
+				0AAF7376133AA17F00487FEE /* InfoPlist.strings */,
+				0AAF7379133AA17F00487FEE /* KRPrivilegedOperation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AAF7384133AA17F00487FEE /* KRPrivilegedOperationTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF738B133AA17F00487FEE /* KRPrivilegedOperationTests.h */,
+				0AAF738D133AA17F00487FEE /* KRPrivilegedOperationTests.m */,
+				0AAF7385133AA17F00487FEE /* Supporting Files */,
+			);
+			path = KRPrivilegedOperationTests;
+			sourceTree = "<group>";
+		};
+		0AAF7385133AA17F00487FEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7386133AA17F00487FEE /* KRPrivilegedOperationTests-Info.plist */,
+				0AAF7387133AA17F00487FEE /* InfoPlist.strings */,
+				0AAF738A133AA17F00487FEE /* KRPrivilegedOperationTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AAF739F133AA1F600487FEE /* C */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7397133AA1C900487FEE /* recvfdpriv.h */,
+				0AAF739A133AA1C900487FEE /* recvfdpriv.c */,
+				0AAF7398133AA1C900487FEE /* error.c */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		0AAF73A4133AA38900487FEE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF73A5133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.h */,
+				0AAF73A6133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.m */,
+				0AAF73B8133D1EB400487FEE /* NSFileManager+PrivilegedOperations.h */,
+				0AAF73B9133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AAF7367133AA17F00487FEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF739B133AA1C900487FEE /* recvfdpriv.h in Headers */,
+				0AAF73A7133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.h in Headers */,
+				0AAF73BA133D1EB400487FEE /* NSFileManager+PrivilegedOperations.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AAF7369133AA17F00487FEE /* KRPrivilegedOperation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AAF7391133AA17F00487FEE /* Build configuration list for PBXNativeTarget "KRPrivilegedOperation" */;
+			buildPhases = (
+				0AAF7365133AA17F00487FEE /* Sources */,
+				0AAF7366133AA17F00487FEE /* Frameworks */,
+				0AAF7367133AA17F00487FEE /* Headers */,
+				0AAF7368133AA17F00487FEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRPrivilegedOperation;
+			productName = MMPrivilegedOperation;
+			productReference = 0AAF736A133AA17F00487FEE /* KRPrivilegedOperation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0AAF737E133AA17F00487FEE /* KRPrivilegedOperationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AAF7394133AA17F00487FEE /* Build configuration list for PBXNativeTarget "KRPrivilegedOperationTests" */;
+			buildPhases = (
+				0AAF737A133AA17F00487FEE /* Sources */,
+				0AAF737B133AA17F00487FEE /* Frameworks */,
+				0AAF737C133AA17F00487FEE /* Resources */,
+				0AAF737D133AA17F00487FEE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AAF7382133AA17F00487FEE /* PBXTargetDependency */,
+			);
+			name = KRPrivilegedOperationTests;
+			productName = MMPrivilegedOperationTests;
+			productReference = 0AAF737F133AA17F00487FEE /* KRPrivilegedOperationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AAF7360133AA17F00487FEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Micromat Inc.";
+			};
+			buildConfigurationList = 0AAF7363133AA17F00487FEE /* Build configuration list for PBXProject "KRPrivilegedOperation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AAF735E133AA17F00487FEE;
+			productRefGroup = 0AAF736B133AA17F00487FEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AAF7369133AA17F00487FEE /* KRPrivilegedOperation */,
+				0AAF737E133AA17F00487FEE /* KRPrivilegedOperationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AAF7368133AA17F00487FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF7378133AA17F00487FEE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAF737C133AA17F00487FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF7389133AA17F00487FEE /* InfoPlist.strings in Resources */,
+				0AAF738C133AA17F00487FEE /* KRPrivilegedOperationTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AAF737D133AA17F00487FEE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AAF7365133AA17F00487FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF739C133AA1C900487FEE /* error.c in Sources */,
+				0AAF739E133AA1C900487FEE /* recvfdpriv.c in Sources */,
+				0AAF73A8133C3C8F00487FEE /* NSFileHandle+PrivilegedOperations.m in Sources */,
+				0AAF73BB133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAF737A133AA17F00487FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF738E133AA17F00487FEE /* KRPrivilegedOperationTests.m in Sources */,
+				0A29A50F133C854600168704 /* NSFileHandle+PrivilegedOperations.m in Sources */,
+				0AAF73BC133D1EB400487FEE /* NSFileManager+PrivilegedOperations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AAF7382133AA17F00487FEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AAF7369133AA17F00487FEE /* KRPrivilegedOperation */;
+			targetProxy = 0AAF7381133AA17F00487FEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AAF7376133AA17F00487FEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AAF7377133AA17F00487FEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0AAF7387133AA17F00487FEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AAF7388133AA17F00487FEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AAF738F133AA17F00487FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0AAF7390133AA17F00487FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0AAF7392133AA17F00487FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRPrivilegedOperation/KRPrivilegedOperation-Prefix.pch";
+				INFOPLIST_FILE = "KRPrivilegedOperation/KRPrivilegedOperation-Info.plist";
+				PRODUCT_NAME = KRPrivilegedOperation;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		0AAF7393133AA17F00487FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRPrivilegedOperation/KRPrivilegedOperation-Prefix.pch";
+				INFOPLIST_FILE = "KRPrivilegedOperation/KRPrivilegedOperation-Info.plist";
+				PRODUCT_NAME = KRPrivilegedOperation;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		0AAF7395133AA17F00487FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMPrivilegedOperationTests/KRPrivilegedOperationTests-Prefix.pch";
+				INFOPLIST_FILE = "MMPrivilegedOperationTests/KRPrivilegedOperationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = KRPrivilegedOperationTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0AAF7396133AA17F00487FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMPrivilegedOperationTests/KRPrivilegedOperationTests-Prefix.pch";
+				INFOPLIST_FILE = "MMPrivilegedOperationTests/KRPrivilegedOperationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = KRPrivilegedOperationTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AAF7363133AA17F00487FEE /* Build configuration list for PBXProject "KRPrivilegedOperation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAF738F133AA17F00487FEE /* Debug */,
+				0AAF7390133AA17F00487FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AAF7391133AA17F00487FEE /* Build configuration list for PBXNativeTarget "KRPrivilegedOperation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAF7392133AA17F00487FEE /* Debug */,
+				0AAF7393133AA17F00487FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AAF7394133AA17F00487FEE /* Build configuration list for PBXNativeTarget "KRPrivilegedOperationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAF7395133AA17F00487FEE /* Debug */,
+				0AAF7396133AA17F00487FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AAF7360133AA17F00487FEE /* Project object */;
+}
